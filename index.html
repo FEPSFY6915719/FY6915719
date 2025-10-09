@@ -1,15 +1,23 @@
+
 <!DOCTYPE html>
 
 <html>
 
   <head>
   <img src="LookAtBannerMichael.png" alt="Banner" width="1200" height="300">
+  </head>
+
+   <hr>
     <h1><b>ENG0018 Computer Laboratory 2025/26</b></h1>
     <h2>Student URN: 6915719</h2>
-  <hr>
   <h2 style="font-family:calibri;"><b> Conference paper: Bridge Deck Repairs</b></h2>
   <hr>
-
+    <style>
+    p.ex1 {
+      margin-left: 250px
+    }
+  </style>
+  
 <!style for tables>
     <style>
       table {
@@ -26,21 +34,8 @@
       }
 
       tr:nth-child(even) {
-        background-colour: #F47600;
+        background-color: #FFFFFF;
       }
-<title>My Daily Activities</title>
-
-
-      
-    </style>
-
-  <style>
-    </head>
-p.ex1 {
-  margin-left: 250px;
-}
-</style>
-
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
@@ -75,22 +70,39 @@ p.ex1 {
 <h3 id="Abstract">Abstract</h3>
 <p class="ex1">
   <pre>
-    The car's livery was first presented at an event in the Museo Soumaya
-    in Mexico City on 21 January 2015, albeit using a modified chassis 
-    from a previous car instead of the VJM08 itself.[1][2] The team did
-    not participate at all in Jerez and elected to use their 2014 car at
-    the first test in Barcelona.[1][3][4] The VJM08 finally made its on-
-    track debut at the second and final testing session in Barcelona. This
-    delay was in part due to Force India switching to Toyota's Cologne-based
-    wind tunnel in Germany. The new tunnel allows the team to test 60% 
-    scale models as opposed to the 50% scale they had been using with their
-    old tunnel.[5]
-
-    The team used a new car development model for the 2015 season. They 
-    aimed to increase the car's performance as the season went on through 
-    the introduction of a B-spec car and several other upgrades later in the 
-    season.
+    Brawn GP took the motorsport world by storm the moment it 
+    arrived at first test for the 2009 Formula One World 
+    Championship.  A small loophole in the rules provided an
+    opportunity with huge potential, and while other teams
+    inevitebly lobbied to have the device banned, the sport's
+    governing body, the FIA, were utterly powerless, for what
+    Ross Brawn's technical team had managed was entirely within
+    the rules.
   </pre>
 </p>
 
-<h3 id=”Analysis and discussion”>Analysis and discussion</h3>
+<h3 id="Analysis and discussion">Analysis and discussion</h3>
+
+<title>My Daily Activities</title>
+  <script type="text/javascript" src=https://www.gstatic.com/charts/loader.js></script>
+  <div id="chart_div"></div>
+  <script type="text/javascript">
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+    function drawChart(){
+      var data = google.visualization.arrayToDataTable([
+        ['Task', 'Hours per Day'],
+        ['Work', 8],
+        ['Sleep', 8],
+        ['Eat', 2],
+        ['Study', 4],
+        ['Exercise', 2]
+      ]);
+      var options = {
+        title: 'My Daily Activities'
+      };
+      var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+      chart.draw(data, options);
+
+    }
+</script>
