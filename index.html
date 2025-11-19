@@ -144,15 +144,15 @@ A diffuser acts similarly to placing a finger over the end of a hosepipe.  It pr
   <p class="ex1">
     Jenson Button won a record-equalling 6 of the first 7 races of the season (The Guardian, 2009).  This domination provided him with a lead of 26 points over his teammate Rubens Barrichello, and 31 from Red Bull’s Sebastian Vettel (Racefans.net, 2009)[15].  For context, a race win was worth just 10 points.
   </p>
-  <script type="text/javascript" src=https://www.gstatic.com/charts/loader.js></script>
-  <div id="chart1"></div>
-  <div id="chart2"></div>
+  <script src="https://www.gstatic.com/charts/loader.js"></script>
+  <div id="chart1" style="width: 600px; height: 400px;"></div>
+  <div id="chart2" style="width: 600px; height: 400px;"></div>
   
-  <script type="text/javascript">
-    google.charts.load('current', {'packages':['corechart']});
+  <script>
+    google.charts.load('current', {packages: ['corechart']});
     google.charts.setOnLoadCallback(drawCharts);
-    function drawCharts(){
-      var data = google.visualization.arrayToDataTable([
+    function drawCharts() {
+      var data1 = google.visualization.arrayToDataTable([
         ['WDC Points', 'First seven races'],
         ['Button', 61],
         ['Barrichello', 35],
@@ -162,8 +162,9 @@ A diffuser acts similarly to placing a finger over the end of a hosepipe.  It pr
       var options1 = { title: 'WDC Points in first seven races'};
       };
 
-      var chart1 = new google.visualization.PieChart(document.getElementById('chart_div1'));
-      chart.draw(data1 , options);
+      var chart1 = new google.visualization.PieChart(document.getElementById('chart1')
+       ):
+      chart1.draw(data1 , options1);
       
       var data2 = google.visualization.arrayToDataTable([
         ['WDC Points', 'After season finale'],
@@ -172,9 +173,9 @@ A diffuser acts similarly to placing a finger over the end of a hosepipe.  It pr
         ['Vettel', 84],
         ['Webber', 69.5]
       ]);
-      var options2 = { title: 'WDC points after season finale'};
-      var chart2 = new google.visualization.PieChart(document.getElementById('chart2'));
-      chart.draw(data2, options);
+      var options2 = {title: 'WDC points after season finale'};
+      var chart2 = new google.visualization.PieChart(document.getElementById('chart2');
+      chart2.draw(data2, options);
       
 
     }
