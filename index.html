@@ -125,6 +125,7 @@
 <details closed>
   <summary><b>Analysis and discussion</b></summary>
 <h3 class="h3_ex1" id="Analysis and discussion">Key background knowledge</h3>
+  <p id="Analysis and discussion_InText">
 <h4 class="h4_ex1" id="The aerodynamics involved">The aerodynamics involved</h4>
   <p class="ex1">
    Aerodynamics is the art of manipulating air in such a way that it provides an advantage to the user.  Nature discovered this far before humanity – the first pterosaur existing around 250 million years ago (Britannica, 2025)[3] – but since the Wright brothers’ invention of the first flying machine in 1903 (National Air and Space Museum, 2022)[4] aerodynamic development has skyrocketed.
@@ -322,7 +323,7 @@
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisCount = displayWordCount("Analysis_InText");
+    const AnalysisCount = displayWordCount("Analysis and introduction_InText");
     // Calculate the sum of all selected sections
     const totalWordCount = IntroductionCount + AnalysisCount;
     // Display the total word count
@@ -330,4 +331,7 @@
   }
   // Run the function for specific sections and display total count when the page loads
   window.onload = displayTotalWordCount;
+
+
+
 </script>
