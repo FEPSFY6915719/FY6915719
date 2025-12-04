@@ -117,17 +117,18 @@
 <details closed>
   <summary><b>Introduction</b></summary>
 <h3 class="h3_ex1" id="Introduction">Introduction</h3>
+  <pre id="Introduction_InText">
   <p class="ex1">
    On 5th December 2008, Honda CEO Takeo Fakui announced the withdrawal of Honda from Formula One.  Battered by the financial crisis and an already struggling auto car market, the company could no longer afford the estimated $300 million budget for the season <a href="#References">(Sky Sports, 2008)[1]</a>.  After a frantic scrabble by team principal Ross Brawn, he eventually bought the team from Honda for a peppercorn deal of £1 <a href="#References">(BBC Sport, 2009)[2]</a>.
   </p>
 </details>
-
+</pre>
   <hr>
   
 <details closed>
   <summary><b>Analysis and discussion</b></summary>
 <h3 class="h3_ex1" id="Analysis and discussion">Key background knowledge</h3>
-  <p id="Analysis and discussion_InText">
+  <p id="Analysisanddiscussion_InText">
 <h4 class="h4_ex1" id="The aerodynamics involved">The aerodynamics involved</h4>
   <p class="ex1">
    Aerodynamics is the art of manipulating air in such a way that it provides an advantage to the user.  Nature discovered this far before humanity – the first pterosaur existing around 250 million years ago <a href="#References">(Britannica, 2025)[3]</a> – but since the Wright brothers’ invention of the first flying machine in 1903 <a href="#References">(National Air and Space Museum, 2022)[4]</a> aerodynamic development has skyrocketed.
@@ -325,9 +326,9 @@
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisCount = displayWordCount("Analysis and introduction_InText");
+    const AnalysisanddiscussionCount = displayWordCount("Analysisanddiscussion_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+    const totalWordCount = IntroductionCount + AnalysisanddiscussionCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
